@@ -1,0 +1,52 @@
+@import "../../../App.scss";
+
+nav.spotify-sidemenu{
+    grid-area: 'nav-sidebar';
+    float: left;
+    position: fixed;
+    overflow: auto;
+    height: $sidebar-heigth;
+    width: $sidebar-width;
+
+
+}
+.sidebar {
+    background-color: #000000;  
+    padding: 3vh 1vh 1vh 0;
+    height: 100%;
+    & ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 2vh;
+        list-style: none;
+    }
+    & li{
+        border-bottom: 1px solid #ddd;
+        margin-top: 1vh;
+        padding: 0 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    & a{
+        align-items: center;
+        border-radius: 4px;
+        display: flex;
+        height: 40px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        gap: 16px;
+        padding: 0 16px;
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: #fff;
+        cursor:pointer;
+    }
+    & .spotify-logo{
+        max-width: 131px;
+        padding-bottom: 3vh;
+        padding-top:3vh;
+    }
+}

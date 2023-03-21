@@ -1,0 +1,84 @@
+@import "../../../App.scss";
+nav.spotify-header.nav{
+    // background-color: #ff0000;
+    color: #fff;
+    padding: 1vh;
+    overflow: hidden;
+    width: $nav-width;
+    margin-left: $sidebar-width;
+    height: $header-height;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: end;
+    transition: all 0.5 ease-in-out;
+    position: fixed;
+    // position: absolute;
+}
+
+.nav:hover{
+    visibility: visible;
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.2) , rgba(0,0,0,1));
+}
+
+.header{
+    & ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    & li{
+        display: inline-block;
+        margin-right: 2.5vh;
+    }
+    & a {
+        color: #fff;
+        text-decoration: none;
+    }
+    & .user-button{
+        position: relative;
+        margin-right: 1vh;
+        border: 0;
+        padding: 2px;
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        gap: 8px;
+        border-radius: 23px;
+        background-color: black;
+    }
+    & .user-icon{
+        display: inline-block;
+        position: relative;
+        inset-inline-start: 0px;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+        box-sizing: border-box;
+    }
+    & .user-img{
+        border-radius: 50%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+    & .user-name{
+        color:white;
+        display: block;
+        font-size:0.875rem;
+        box-sizing: border-box;
+        margin-block: 0px;
+        font-weight: 700;
+        line-height: 28px;
+        max-width: 110px;
+        overflow: hidden;
+        pointer-events: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

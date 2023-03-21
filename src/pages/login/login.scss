@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.app{
+    background-color: rgb(68, 68, 68);
+    height: 50vh;
+    width: 100vh;
+}
+.app-header{
+    & h1{
+        text-align: center;
+    }
+}
+.container-sign{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 40vh;
+    background-color: green;
+    width: 25vh;
+    .text{
+        color: white;
+        font-size: x-large;
+        margin-left: 1vh;
+        margin-right: 1vh;
+
+    }
+}
+.container-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    .login{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2vh;
+        background-color: red;
+    }
+}
