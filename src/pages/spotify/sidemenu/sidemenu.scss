@@ -1,52 +1,52 @@
-@import "../../../App.scss";
+// @import "../../../App.scss";
 
-nav.spotify-sidemenu{
-    grid-area: 'nav-sidebar';
-    float: left;
-    position: fixed;
-    overflow: auto;
-    height: $sidebar-heigth;
-    width: $sidebar-width;
+// nav.spotify-sidemenu{
+//     position: sticky;
+//     overflow: auto;
+//     height: $sidebar-heigth;
+//     width: $sidebar-width;
+//     max-width: calc($sidebar-width * 1.5);
+//     resize: horizontal;
+//     flex-shrink: 0;
 
+// }
+// .sidebar {
+//     background-color: #000000;  
+//     padding: 3vh 1vh 1vh 0;
+//     height: 100vh;  
+//     & ul{
+//         display: flex;
+//         flex-direction: column;
+//         margin: 0;
+//         padding: 2vh;
+//         list-style: none;
+//     }
+//     & li{
+        // border-bottom: 1px solid #ddd;
+        // margin-top: 1vh;
+        // padding: 0 8px;
+        // max-width: 100%;
+        // overflow: hidden !important;
+        // text-overflow: ellipsis !important;
+        // white-space: nowrap;
+//     }
+//     & a{
+        // align-items: center;
+        // border-radius: 4px;
+        // display: flex;
+        // height: 40px;
+        // gap: 16px;
+        // padding: 0 16px;
+        // font-size: 0.875rem;
+        // font-weight: 700;
+        // cursor:pointer;
 
-}
-.sidebar {
-    background-color: #000000;  
-    padding: 3vh 1vh 1vh 0;
-    height: 100%;
-    & ul{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 2vh;
-        list-style: none;
-    }
-    & li{
-        border-bottom: 1px solid #ddd;
-        margin-top: 1vh;
-        padding: 0 8px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    & a{
-        align-items: center;
-        border-radius: 4px;
-        display: flex;
-        height: 40px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        gap: 16px;
-        padding: 0 16px;
-        font-size: 0.875rem;
-        font-weight: 700;
-        color: #fff;
-        cursor:pointer;
-    }
-    & .spotify-logo{
-        max-width: 131px;
-        padding-bottom: 3vh;
-        padding-top:3vh;
-    }
-}
+        // color: #fff;
+        // width: 100%;
+//     }
+//     & .spotify-logo{
+//         max-width: 131px;
+//         padding-bottom: 3vh;
+//         padding-top:3vh;
+//     }
+// }

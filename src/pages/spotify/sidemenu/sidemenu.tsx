@@ -1,13 +1,62 @@
-import React from "react";
+import React,{useRef, MutableRefObject} from "react";
 import './sidemenu.scss'
 import '../../../index.css'
+import { Resizable } from 'react-resizable';
+
 import { AiFillHome, AiOutlineSearch,  } from 'react-icons/ai';
 import {BiLibrary} from 'react-icons/bi'
-export class SpotifySideMenu extends React.Component{
+interface State{
+    isResizing: boolean;
+    width: number;
+    startX: number;
+}
+export class SpotifySideMenu extends React.Component<{},State>{
+
+    constructor(props:{}){
+        super(props)
+        this.state = {
+            isResizing: false,
+            width: 10, 
+            startX: 0,
+        }
+        this.handleMouseDown = this.handleMouseDown.bind(this);
+        this.handleMouseUp = this.handleMouseUp.bind(this);
+        this.handleMouseMove = this.handleMouseMove.bind(this);
+    }
+
+    handleMouseDown(event:React.MouseEvent<HTMLDivElement>){
+        this.setState({
+            isResizing: true,
+            startX: event.clientX,
+          });
+    } 
+
+    handleMouseUp(){
+        this.setState({
+            isResizing: false,
+          });
+    }
+
+    handleMouseMove(event: React.MouseEvent<HTMLDivElement>){
+        if(!this.state.isResizing){
+            return;
+        }
+        const deltaX = event.clientX - this.state.startX;
+
+        this.setState((prevState) => ({
+            width: Math.max(prevState.width + deltaX, 10),
+            startX: event.clientX,
+          }));
+    }
+
 
     render(){
         return(
-            <nav className="spotify-sidemenu">
+            <nav className="spotify-sidemenu"
+            style={{
+                // width: `${this.state.width}vw`,
+            }}
+            >
                 <div className="sidebar">
                     <ul>
                     <div>
@@ -24,6 +73,7 @@ export class SpotifySideMenu extends React.Component{
                         <li><a href=""><span className="text-white"><BiLibrary size={24}></BiLibrary></span>Sua biblioteca</a></li>
                     </ul>
                 </div>
+
             </nav>
         )
     }

@@ -1,16 +1,22 @@
-@import "../../App.scss";
-@import "sass-extras";
-$a-height: get-size('.spotify-header', 'height');
+// @import "../../App.scss";
+// @import "sass-extras";
+// $a-height: get-size('.spotify-header', 'height');
 
-.spotify{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-.content {
-  flex: 1;
-  margin-left: $sidebar-width;
-  margin-top: $header-height;
-  height: calc(100% - $header-height);
-  padding: 3vh;
-}
+// .spotify{
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+// }
+
+// .flex-wrapper{
+//   display: flex;
+//   width: 100%;
+//   overflow: hidden;
+// }
+// .content {
+//   flex-grow: 1;
+//   // margin-left: $sidebar-width;
+//   margin-top: $header-height;
+//   height: calc(100% - $header-height);
+//   padding: 3vh;
+// }

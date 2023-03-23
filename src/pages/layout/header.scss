@@ -1,0 +1,69 @@
+nav.spotify-header{
+    background-color: black;
+    // background-image:linear-gradient(to top,rgba(31 41 55) , rgba(31, 41, 55,0.5));
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    ul{
+        margin-right: 2%;
+        padding:10px 10px 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        li{
+            & .user-button{
+                position: relative;
+                margin-right: 1vh;
+                border: 0;
+                padding: 2px;
+                display: flex;
+                height: 32px;
+                justify-content: center;
+                align-items: center;
+                -webkit-box-align: center;
+                -webkit-box-pack: center;
+                gap: 8px;
+                border-radius: 23px;
+                background-color: black;
+            }
+            & .user-icon{
+                display: inline-block;
+                position: relative;
+                inset-inline-start: 0px;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                vertical-align: baseline;
+                box-sizing: border-box;
+            }
+            & .user-img{
+                border-radius: 50%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                width: 100%;
+            }
+            & .user-name{
+                color:white;
+                display: block;
+                font-size:0.875rem;
+                box-sizing: border-box;
+                margin-block: 0px;
+                font-weight: 700;
+                line-height: 28px;
+                max-width: 110px;
+                overflow: hidden;
+                pointer-events: none;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            button.spotify-button{
+                color: black;
+                font-weight: 700;
+                background-color: white;
+                padding: 7px;
+                border-radius: 500px;
+            }
+        }
+    }
+}
